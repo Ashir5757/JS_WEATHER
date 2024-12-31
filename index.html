@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="blur-bg">
+        <span class="loader"></span>
+    </div>
+
+    <div class="messages">
+
+        <div class="success">
+            <strong id="success-text">This is a success</strong>
+            <i class="fa-solid fa-circle-check" style="font-size: 40px;"></i>
+        </div>
+
+        <div class="error">
+            <strong id="error-text" >This is an error</strong>
+            <i class="fa-solid fa-circle-xmark" style="font-size: 40px;"></i>
+        </div>
+    </div>
+    
+
+    <div class="container">
+
+        <div class="box box1">
+            <i class="fa-solid fa-house" style="font-size: 30px;"></i>
+            <!-- <i class="fa-solid fa-location-dot" style="font-size: 30px;"></i> -->
+        </div>
+        <div class="box box2">
+
+            <!-- search bar -->
+            <div class="search-bar">
+                <form action="" id="form" class="form">
+                    <input type="text" placeholder="Search" class="search-input" id="search">
+                    <button type="submit" value="Search" class="search-btn">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+
+                </form>
+            </div>
+
+            <!-- image and text -->
+            <div class="image-box">
+                <img src="./weather-7159428_1920-removebg-preview (1).png" alt="" id="image">
+                <div>
+                    <div class="weather-web">
+                        <h1 style="font-size: 4rem;" id="temp"></h1>
+                        <i class="fa-solid fa-temperature-low" style="font-size: 25px;" id="far" >F <span id="farenhite" style="font-size: 15px;"></span></i>
+                        <i class="fa-solid fa-temperature-three-quarters" style="font-size: 25px;" id="cel" >C <span id="celcius" style="font-size: 15px;"></span></i>
+                    </div>
+                 
+                    <p>
+                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                        <span id="cloudy">Cloudy</span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="city">London</span>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span id="date">Today</span>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="box3">
+                <!-- 3 box -->
+                <div class="boxes">
+                    <div class="box-flex">
+                        <p>
+                            <b>
+                                Humidity
+                            </b>
+                        </p>
+                        <h1 id="humidity">
+                            50%
+                        </h1>
+                    </div>
+                    <div class="box-flex">
+
+                        <p>
+                            <i class="fa-solid fa-droplet" style="font-size: 15px;" ></i>
+                           <span id="humidity-des"> The drop point is 30 celcius </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box-flex">
+                        <p>
+                            <b>
+                                Visibility
+                            </b>
+                        </p>
+                        <h1 id="visibility">
+                            50Km
+                        </h1>
+                    </div>
+                    <div class="box-flex">
+
+                        <p>
+                            <i class="fa-solid fa-eye" style="font-size: 15px;"></i>
+                            <span id="visibility-des"> The drop point is 30 celcius </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box-flex">
+                        <p>
+                            <b>
+                                FeelsLike
+                            </b>
+                        </p>
+                        <h1>
+                            <i class="fa-solid fa-temperature-half" id="feelslike">43</i>
+
+                        </h1>
+                    </div>
+                    <div class="box-flex">
+
+                        <p id="feelslike-des">
+                            The drop point is 30 celcius
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
